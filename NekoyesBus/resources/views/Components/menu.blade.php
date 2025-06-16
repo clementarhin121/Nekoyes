@@ -11,7 +11,7 @@
 
         <style>
             .fa-cart-shopping {
-                color: white;
+                color: rgba(255, 255, 255, 0.769);
             }
         </style>
     </head>
