@@ -9,12 +9,13 @@
     .overlay {
         height: 80vh;
         width: 100vw;
-        background-color: rgba(20, 20, 20, 0.418);
+        background-color: rgba(90, 86, 34, 0.248);
     }
 
     .topMenu {
         height: 15vh;
         display: flex;
+        position: fixed;
         .logo {
             cursor: pointer;
             margin-top: 3.4vh;

@@ -1,13 +1,15 @@
 .homeBody {
     height: 80vh;
     align-items: center;
-    position: absolute;
     margin-top: -50vh;
     width: 100vw;
+
     .itemization {
         padding-top: 1vh;
         height: 40vh;
         padding-left: 20vw;
+        visibility: hidden;
+        transform: translateY(-500%);
         ul {
             display: flex;
             height: 40vh;
@@ -16,6 +18,7 @@
             padding-top: 2vh;
             text-align: center;
             list-style: none;
+
             li {
                 border-radius: 2px;
                 background-color: rgba(18, 17, 17, 0.628);
@@ -28,10 +31,12 @@
                 cursor: pointer;
                 transition: 0.2s ease-in-out;
             }
+
             li:hover {
                 background-color: rgba(18, 17, 17, 0.802);
                 transform: scale(1.1);
             }
+
             #l1 {
                 margin-top: 15vh;
             }
@@ -48,15 +53,57 @@
             }
         }
     }
+
+    .activate {
+        visibility: visible;
+        transform: translateY(0%);
+        transition: 1s;
+    }
+
     .end {
-        padding-top: 15vh;
+        text-align: center;
+        align-items: center;
+
+        #party {
+            text-align: center;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            width: 28vw;
+            margin-left: 38vw;
+            margin-top: -5vh;
+            height: 2vh;
+            padding-bottom: 10vh;
+            padding-top: 0.5vh;
+            align-items: center;
+            background-color: rgba(245, 222, 179, 0.727);
+            cursor: pointer;
+            transition: 1s ease-in-out;
+
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+            pointer-events: auto;
+        }
+        #party:hover {
+            background-color: rgba(246, 160, 0, 0.453);
+            transform: scale(1.02);
+            transition: 0.2s ease-in-out;
+        }
+
+        #party.active {
+            opacity: 0;
+            pointer-events: none;
+        }
+
         h2 {
             padding: 2vh;
             font-family: cursive;
             color: rgb(49, 41, 0);
             font-weight: bolder;
         }
-        text-align: center;
-        align-items: center;
+
+        img {
+            padding-top: 10vh;
+        }
     }
 }

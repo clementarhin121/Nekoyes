@@ -6,6 +6,8 @@
         <title>Layout</title>
         <link rel="stylesheet" href="{{ asset('css/layout.css') }}">
         <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+        <script defer src="{{ asset(path: 'js/layout.js') }}"></script>
+        <script defer src="{{ asset('js/menu.js') }}"></script>
     </head>
     <body>
         <div class="layoutBody">
