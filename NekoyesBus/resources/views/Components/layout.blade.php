@@ -11,8 +11,11 @@
     </head>
     <body>
         <div class="layoutBody">
-            <x-menu></x-menu>
-            {{ $slot }}
+            <div class="overlay">
+                <x-menu></x-menu>
+                {{ $slot }}
+            </div>
+
         </div>
     </body>
 </html>

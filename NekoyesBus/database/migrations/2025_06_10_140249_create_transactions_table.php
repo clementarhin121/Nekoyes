@@ -15,7 +15,7 @@ return new class extends Migration {
             $table->foreignIdFor(customer::class, 'customer_id')->constrained('customers', 'customer_id');
             $table->increments('transaction_id');
             $table->string('payment');
-            $table->string('card number');
+            $table->string('card_number');
             $table->string('amount');
             $table->timestamps();
         });

@@ -1,19 +1,10 @@
 .menuBody {
-    height: 80vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
-    background-image: url("https://blossomandsol.com/wp-content/uploads/2018/03/Curly-Girl-Picnic-2018-55-of-76-1024x683.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -70px;
-    .overlay {
-        height: 80vh;
-        width: 100vw;
-        background-color: rgba(90, 86, 34, 0.248);
-    }
-
     .topMenu {
-        height: 15vh;
+        height: 10vh;
+        width: 100vw;
         display: flex;
         position: fixed;
         .logo {
@@ -68,6 +59,30 @@
                     height: 0.2vh;
                     width: 5vw;
                 }
+            }
+        }
+    }
+}
+.popBody {
+    margin-top: 2vh;
+    height: 50vh;
+    width: 50vw;
+    text-align: center;
+    margin-left: 28vw;
+    .itemization {
+        color: white;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            li {
+                border: 1px solid;
+                cursor: pointer;
+                width: 40vw;
+                text-align: center;
+                font-size: 2em;
+                padding: 1vh;
             }
         }
     }
