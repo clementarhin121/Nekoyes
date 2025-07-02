@@ -6,13 +6,17 @@ a {
     color: inherit;
     text-decoration: none;
 }
+li {
+    list-style: none;
+}
 .layoutBody {
-    height: 80vh;
+    height: 120vh;
     width: 100vw;
-    background-image: url("https://i0.wp.com/blkwomenhustle.com/wp-content/uploads/2021/09/BWHATL-1.png?fit=1920%2C1080&ssl=1");
+    background-image: url("https://assets.simpleviewinc.com/simpleview/image/upload/crm/catalinaislandccvb/Main-Scroll-20-2dc5fc495056a36_2dc5fe05-5056-a36a-06e29ecfef6509e0.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     .overlay {
-        height: 80vh;
+        height: 120vh;
         width: 100vw;
         background-color: rgba(194, 193, 177, 0.248);
     }

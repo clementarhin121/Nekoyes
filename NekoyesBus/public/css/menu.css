@@ -11,7 +11,6 @@
             cursor: pointer;
             margin-top: 3.4vh;
             padding-top: 2vh;
-            border: 1px solid;
             border-radius: 2px;
             height: 6vh;
             width: 30vw;
@@ -42,6 +41,7 @@
             }
         }
         .burger {
+            background-color: rgb(200, 70, 10);
             cursor: pointer;
             margin-top: 4.5vh;
             display: flex;
@@ -64,11 +64,17 @@
     }
 }
 .popBody {
+    border: 1px solid;
     margin-top: 2vh;
+    padding-top: 5vh;
     height: 50vh;
     width: 50vw;
     text-align: center;
     margin-left: 28vw;
+    position: fixed;
+    transform: translateY(-150%);
+    visibility: hidden;
+
     .itemization {
         color: white;
         ul {
@@ -77,13 +83,24 @@
             flex-direction: column;
             gap: 5vh;
             li {
-                border: 1px solid;
+                border: 1px solid inherit;
                 cursor: pointer;
-                width: 40vw;
+                width: 35vw;
                 text-align: center;
                 font-size: 2em;
                 padding: 1vh;
+                background-color: rgba(249, 117, 10, 0.879);
+            }
+            li:hover {
+                scale: 1.04;
+                transition: 0.3s;
             }
         }
     }
+}
+
+.activate {
+    visibility: visible;
+    transform: translateY(0);
+    transition: 0.5s;
 }
