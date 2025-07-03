@@ -11,10 +11,12 @@
             <div class="showPBody">
                 <nav class="showPDet">
                     <ul>
-                        <li>{{ $ind->product_id }}</li>
-                        <li>hello</li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <h1>{{$ind->product_name}}</h1>
+                        </li>
+                        <li><img width="100%" height="100%" src="{{ $ind->product_image }}" alt=""></li>
+                        <li>{{$ind->product_location}}</li>
+                        <li>${{ $ind->product_price }}</li>
                     </ul>
                 </nav>
             </div>

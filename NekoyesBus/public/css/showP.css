@@ -1,5 +1,39 @@
 .showPBody {
-    border: 1px solid;
     height: 100vh;
-    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    overflow-x: wrap;
+    margin-top: 2vh;
+    .showPDet {
+        color: white;
+        gap: 5vh;
+        display: flex;
+        flex-direction: column;
+        ul {
+            background-color: rgba(251, 121, 0, 0.936);
+            width: 60vw;
+            height: 45vh;
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+            gap: 1vh;
+            display: flex;
+            flex-direction: column;
+            transition: 0.2s;
+
+            h1 {
+                font-size: 2em;
+            }
+            li {
+                width: 50vw;
+                font-size: 1.5em;
+                letter-spacing: 1px;
+            }
+        }
+
+        ul:hover {
+            scale: 1.02;
+        }
+    }
 }
