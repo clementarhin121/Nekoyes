@@ -22,11 +22,10 @@
             cursor: pointer;
         }
         .user {
-            margin-left: 32vw;
+            margin-left: 38vw;
             font-size: 1.5em;
             padding-top: 4.5vh;
-            width: 20vw;
-            padding-left: 9vw;
+            width: 9vw;
             .cart {
                 cursor: pointer;
                 display: flex;
@@ -59,6 +58,44 @@
                     height: 0.2vh;
                     width: 5vw;
                 }
+            }
+        }
+        .userIcon {
+            width: 9vw;
+            display: flex;
+            flex-direction: column;
+            padding-top: 5.1vh;
+            padding-left: 2vw;
+            .usersbody {
+                padding-top: 0.5vh;
+                width: 5vw;
+                height: 4vh;
+                border-radius: 100%;
+                text-align: center;
+                background-color: white;
+                cursor: pointer;
+                .fa-user {
+                    font-size: 4vw;
+                    color: grey;
+                }
+            }
+            .sino {
+                width: 18vw;
+                display: flex;
+                visibility: hidden;
+                gap: 2vw;
+                margin-top: 2vh;
+                margin-left: -6vw;
+                p {
+                    cursor: pointer;
+                }
+                p:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 8px;
+                }
+            }
+            .engage {
+                visibility: visible;
             }
         }
     }

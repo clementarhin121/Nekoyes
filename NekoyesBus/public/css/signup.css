@@ -1,0 +1,41 @@
+.signupBody {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    padding-top: 2vh;
+    .signupform {
+        width: 50vw;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        padding-top: 4vh;
+        background-color: rgba(255, 255, 255, 0.828);
+        form {
+            h2 {
+                text-align: center;
+                cursor: pointer;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 4vh;
+            font-size: 1.2em;
+            input {
+                font-size: 0.8em;
+            }
+            #sub1 {
+                padding: 1.5vh;
+                border: none;
+                cursor: pointer;
+            }
+            p {
+                margin-top: -1vh;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            p:hover {
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
+        }
+    }
+}

@@ -30,6 +30,15 @@
                         <p>0</p>
                     </div>
                 </div>
+                <div class="userIcon">
+                    <div class="usersbody">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="sino">
+                        <p>Signup</p> /
+                        <p>Sign in</p>
+                    </div>
+                </div>
                 <div class="burger">
                     <div class="lanes">
                         <div class="lane1"></div>
@@ -37,6 +46,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
         <div class="popBody">
@@ -47,7 +57,9 @@
                     </a>
                     <li id="l2">Logistics</li>
                     <li id="l3">Calendar</li>
-                    <li id="l4">Connect</li>
+                    <a href="./signup">
+                        <li id="l4">Connect</li>
+                    </a>
                 </ul>
             </div>
         </div>
