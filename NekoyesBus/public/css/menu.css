@@ -67,7 +67,6 @@
             padding-top: 5.1vh;
             padding-left: 2vw;
             .usersbody {
-                padding-top: 0.5vh;
                 width: 5vw;
                 height: 4vh;
                 border-radius: 100%;
@@ -77,6 +76,12 @@
                 .fa-user {
                     font-size: 4vw;
                     color: grey;
+                }
+                img {
+                    margin-top: -0.8vh;
+                    border-radius: 100%;
+                    width: 5.1vw;
+                    height: 5vh;
                 }
             }
             .sino {

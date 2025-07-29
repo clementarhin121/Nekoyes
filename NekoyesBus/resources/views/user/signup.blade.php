@@ -25,6 +25,10 @@
                             <input type="email" name="email" placeholder="E-mail">
                         </label>
                         <label for="">
+                            Profile Pic:
+                            <input type="text" name="profilepic" placeholder="Profilepic">
+                        </label>
+                        <label for="">
                             Password:
                             <input type="password" name="password" placeholder="Password">
                         </label>

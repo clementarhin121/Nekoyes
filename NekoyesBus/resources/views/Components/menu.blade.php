@@ -31,12 +31,18 @@
                     </div>
                 </div>
                 <div class="userIcon">
-                    <div class="usersbody">
-                        <i class="fa-regular fa-user"></i>
+                    <div class="usersbody"> @guest
+                    <i class="fa-regular fa-user"></i> @endguest
+                        <img src="{{ Auth::user()->profilepic }}" alt="">
+
                     </div>
                     <div class="sino">
-                        <p>Signup</p> /
-                        <p>Sign in</p>
+                        <a href="/signup">
+                            <p>Signup</p>
+                        </a>/
+                        <a href="/signin">
+                            <p>Sign in</p>
+                        </a>
                     </div>
                 </div>
                 <div class="burger">
@@ -44,7 +50,6 @@
                         <div class="lane1"></div>
                         <div class="lane2"></div>
                     </div>
-
                 </div>
 
             </div>
