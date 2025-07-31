@@ -12,3 +12,4 @@ Route::get('/signup', [UserController::class, 'signup']);
 Route::post('/signup', [UserController::class, 'create']);
 Route::get('/signin', [UserController::class, 'signin']);
 Route::post('/signin', [UserController::class, 'login']);
+Route::post('/logout', [UserController::class, 'logout']);

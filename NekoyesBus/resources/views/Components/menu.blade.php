@@ -32,17 +32,25 @@
                 </div>
                 <div class="userIcon">
                     <div class="usersbody"> @guest
-                    <i class="fa-regular fa-user"></i> @endguest
-                        <img src="{{ Auth::user()->profilepic }}" alt="">
-
+                    <i class="fa-regular fa-user"></i> @else
+                            <img src="{{ Auth::user()->profilepic }}" alt="">
+                        @endguest
                     </div>
                     <div class="sino">
-                        <a href="/signup">
-                            <p>Signup</p>
-                        </a>/
-                        <a href="/signin">
-                            <p>Sign in</p>
-                        </a>
+                        @guest
+                            <a href="/signup">
+                                <p>Signup</p>
+                            </a>/
+                            <a href="/signin">
+                                <p>Sign in</p>
+                            </a>
+                        @else
+                            <form method="POST" action="/logout" id="logout">
+                                @csrf
+                            </form>
+                            <button type="submit" form="logout">Logout</button>
+
+                        @endguest
                     </div>
                 </div>
                 <div class="burger">
@@ -62,9 +70,7 @@
                     </a>
                     <li id="l2">Logistics</li>
                     <li id="l3">Calendar</li>
-                    <a href="./signup">
-                        <li id="l4">Connect</li>
-                    </a>
+                    <li id="l4">Connect</li>
                 </ul>
             </div>
         </div>
