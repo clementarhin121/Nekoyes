@@ -2,14 +2,13 @@
     height: 100vh;
     text-align: center;
     justify-content: center;
-    display: flex;
-    overflow-x: wrap;
     margin-top: 2vh;
     .showPDet {
         color: white;
         gap: 5vh;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         ul {
             background-color: rgba(251, 121, 0, 0.936);
             width: 60vw;
@@ -34,6 +33,35 @@
 
         ul:hover {
             scale: 1.02;
+        }
+    }
+    .buyItem {
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        padding-left: 2.5vw;
+
+        h1 {
+            font-size: 3em;
+            padding-left: 4vw;
+            padding-right: 4vw;
+            color: white;
+            cursor: pointer;
+        }
+        button {
+            border: none;
+            background-color: rgb(244, 75, 3);
+        }
+        #minus {
+            background-color: rgb(244, 75, 3);
+        }
+        #quant {
+            background-color: rgb(244, 75, 3);
+        }
+        #plus {
+            background-color: rgb(244, 75, 3);
         }
     }
 }

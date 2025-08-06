@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [NavController::class, 'index']);
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{product}', [ProductController::class, 'show']);
+Route::post('/product/{product}/add', [ProductController::class, 'purchase']);
+Route::post('/product/{product}/reduce', [ProductController::class, 'unpurchase']);
 Route::get('/signup', [UserController::class, 'signup']);
 Route::post('/signup', [UserController::class, 'create']);
 Route::get('/signin', [UserController::class, 'signin']);

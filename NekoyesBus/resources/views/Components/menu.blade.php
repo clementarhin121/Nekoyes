@@ -27,7 +27,7 @@
                 <div class="user">
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <p>0</p>
+                        <p>{{ $totalPurchases }}</p>
                     </div>
                 </div>
                 <div class="userIcon">

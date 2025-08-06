@@ -1,5 +1,9 @@
 <?php
 
+use App\Providers\PurchasersServiceProvider;
+
+
+
 return [
 
     /*
@@ -122,5 +126,12 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
+
+    'provider' => [
+
+        PurchasersServiceProvider::class
+
+    ]
 
 ];

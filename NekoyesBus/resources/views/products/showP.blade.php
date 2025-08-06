@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ShowP</title>
         <link rel="stylesheet" href="{{ asset('css/showP.css') }}">
+        <script src="{{ asset('js/showP.js') }}" defer></script>
     </head>
     <body>
         <x-layout>
@@ -19,6 +20,24 @@
                         <li>${{ $ind->product_price }}</li>
                     </ul>
                 </nav>
+                <div class="buyItem">
+                    <form action="/product/{{ $ind->product_id }}/add" method="POST" id="purchase">
+                        @csrf
+                    </form>
+                    <form action="/product/{{ $ind->product_id }}/reduce" method="POST" id="unpurchase">
+                        @csrf
+                    </form>
+                    <button class="reduce" type="submit" form="unpurchase">
+                        <h1 id="minus">-</h1>
+                    </button>
+                    <div class="quantity">
+                        <h1 id="quant">{{ $quantity }}</h1>
+                    </div>
+                    <button class="increase" type="submit" form="purchase">
+                        <h1 id="plus">+</h1>
+                    </button>
+                </div>
+
             </div>
         </x-layout>
 
