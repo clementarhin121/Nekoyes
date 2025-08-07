@@ -34,7 +34,7 @@ class UserController extends Controller
         ]);
         Auth::login($user);
         Mail::to($user->email)->send(new usersignedup());
-        return redirect('/');
+        return redirect('/signin');
 
     }
 

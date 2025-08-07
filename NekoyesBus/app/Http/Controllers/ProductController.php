@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\product;
 use App\Models\purchase;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -32,10 +33,12 @@ class ProductController extends Controller
 
     public function purchase(product $product)
     {
+        $userId = Auth::check() ? Auth::id() : null;
         $existing_product = purchase::where('product_id', $product->product_id)->first();
         if (!$existing_product) {
             $new_purchase = purchase::create([
                 'product_id' => $product->product_id,
+                'user_id' => $userId,
                 'quantity' => 1,
                 'total_price' => $product->product_price
             ]);
